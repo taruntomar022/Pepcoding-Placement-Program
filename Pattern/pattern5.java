@@ -5,7 +5,6 @@ import java.util.*;
                public static void main(String[] args) {
                    Scanner scn = new Scanner(System.in);
                
-                    // write ur code here
                     int n = scn.nextInt();
                     // int mid = (n/2)+1;
                     // int istar = 1;
