@@ -5,7 +5,6 @@ import java.util.*;
      public static void main(String[] args) {
          Scanner scn = new Scanner(System.in);
      
-          // write ur code here
           int a =1;
           int n = scn.nextInt();
           int p = 0,q=1,sum=0;
