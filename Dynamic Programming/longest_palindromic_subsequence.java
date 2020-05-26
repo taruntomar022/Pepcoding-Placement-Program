@@ -11,28 +11,39 @@ public class Main {
     
     public static void lps(String str){
         int dp[][] = new int[str.length()][str.length()];
-        for(int dia = 0; dia < str.length();dia++){
-            //diagonal = j-i
-            for(int i=0,j=dia;j<str.length();i++,j++){
-                if(dia==0){
-                    dp[i][j] = 1;
-                }else if(dia == 1){
-                    if(str.charAt(i) == str.charAt(j)){
-                        dp[i][j] = 2;
-                    }else{
-                        dp[i][j] = 1;
+        for(int diag = 0;diag<str.length();diag++){
+            int si = 0;
+            int ei = diag;
+            while(ei<str.length()){
+                if(diag == 0){
+                    dp[si][ei] = 1;
+                }
+                else if(diag == 1){
+                    if(str.charAt(si) == str.charAt(ei))
+                        dp[si][ei] = 2;
+                    else
+                        dp[si][ei] = 1;
+                }
+                else {
+                    if(str.charAt(si) == str.charAt(ei)){
+                        dp[si][ei] = dp[si+1][ei-1] + 2;
                     }
-                }else{
-                    if(str.charAt(i) == str.charAt(j)){
-                        dp[i][j] =2 + dp[i+1][j-1];
-                    }else{
-                        dp[i][j] = Math.max(dp[i+1][j],dp[i][j-1]);
+                    else{
+                        dp[si][ei] = Math.max(dp[si+1][ei] , dp[si][ei-1]);
                     }
                 }
+                si++;
+                ei++;
             }
-            
         }
-        System.out.println(dp[0][str.length()-1]);
+        int max = Integer.MIN_VALUE;
+        for(int i=0;i<str.length();i++){
+            if(max<dp[0][i]){
+                max = dp[0][i];
+            }
+        }
+        
+        System.out.println(max);
     }
 
 }
