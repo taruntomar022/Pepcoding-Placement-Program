@@ -8,7 +8,7 @@ public class Main {
   }
 
   public static class LinkedList {
-    Node head;
+    Node head; 
     Node tail;
     int size;
 
