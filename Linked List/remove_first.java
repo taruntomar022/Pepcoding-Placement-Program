@@ -29,7 +29,7 @@ public class Main {
 
     public int size(){
       return size;
-    }
+    } 
 
     public void display(){
       for(Node temp = head; temp != null; temp = temp.next){
