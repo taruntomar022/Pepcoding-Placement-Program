@@ -25,7 +25,7 @@ public class Main {
       }
 
       size++;
-    }
+    } 
 
     public int size() {
       return size;
