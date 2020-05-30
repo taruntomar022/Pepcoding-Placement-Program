@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
   public static class Node {
     int data;
-    Node next;
+    Node next; 
   }
 
   public static class LinkedList {
