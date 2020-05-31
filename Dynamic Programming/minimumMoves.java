@@ -39,8 +39,27 @@ public class Main {
 
     //memoization
     public static int minMoves(int[] arr,int n){
-        if(pos == steps.length-1){
-            return 0;
+        int dp[] = new int[n];
+        dp[n-1] = 1;
+        int min = Integer.MAX_VALUE;
+        for(int j=n-2;j>=0;j--){
+            int ways = 0;
+            int maxclimb = arr[j];
+            for(int i=1;i<=maxclimb&&i+j<=n-1;i++){
+                
+                if(j+i<=n-1){
+                    if(j==0){
+                        ways++;
+                    }
+                    
+                    dp[j] += dp[i+j];
+                }
+            }
+            if(ways<min){
+                min = ways;
+            }
         }
+        return min+1;
+    
     }
 }
