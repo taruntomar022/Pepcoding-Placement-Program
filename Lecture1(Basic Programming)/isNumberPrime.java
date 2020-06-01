@@ -23,7 +23,7 @@ import java.util.*;
               System.out.println("prime");
           }
           else{
-              System.out.println("not prime");
+              System.out.println("not prime"); 
           }
           n = n-1;
       }         
