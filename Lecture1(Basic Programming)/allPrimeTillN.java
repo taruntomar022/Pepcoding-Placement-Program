@@ -9,7 +9,7 @@ import java.util.*;
            // write your code here
            Scanner scn = new Scanner(System.in);
            int ul = scn.nextInt();
-           int ll = scn.nextInt();
+           int ll = scn.nextInt(); 
            for(;ul<=ll;ul++){
            int isP = 1;
                for(int i =2;i*i<=ul;i++){
