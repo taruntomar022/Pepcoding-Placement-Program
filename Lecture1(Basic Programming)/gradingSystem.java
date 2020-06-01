@@ -6,7 +6,7 @@ import java.util.*;
       
       Scanner scn = new Scanner(System.in);
       int marks = scn.nextInt();
-   
+    
       if(marks>90){
           System.out.print("excellent");
       }
