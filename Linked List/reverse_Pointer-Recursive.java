@@ -7,7 +7,7 @@ public class Main {
     Node next;
   }
 
-  public static class LinkedList {
+  public static class LinkedList { 
     Node head;
     Node tail;
     int size;
