@@ -5,7 +5,7 @@ public class Main{
     public static class Node{
         int data;
         ArrayList<Node> children = new ArrayList<>();
-        Node(int val){
+        Node(int val){ 
             this.data = val;
         }
     }
