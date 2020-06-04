@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-  private static class Node {
+  private static class Node { 
     int data;
     ArrayList<Node> children = new ArrayList<>();
   }
