@@ -4,7 +4,7 @@ import java.util.*;
 public class Main{
 
 public static void main(String[] args) throws Exception {
-    Scanner scn = new Scanner(System.in);
+    Scanner scn = new Scanner(System.in); 
     int n = scn.nextInt();
     int ans = binCoeff(2*n,n);
     ans = ans/(n+1);
@@ -23,6 +23,6 @@ public static void main(String[] args) throws Exception {
      }     
      
      return res;
- }
+ } 
 
 }
