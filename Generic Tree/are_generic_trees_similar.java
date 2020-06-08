@@ -30,7 +30,7 @@ public class Main {
       } else {
         Node t = new Node();
         t.data = arr[i];
-
+ 
         if (st.size() > 0) {
           st.peek().children.add(t);
         } else {
