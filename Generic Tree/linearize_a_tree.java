@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
   private static class Node {
     int data;
-    ArrayList<Node> children = new ArrayList<>();
+    ArrayList<Node> children = new ArrayList<>(); 
   }
 
   public static void display(Node node) {
