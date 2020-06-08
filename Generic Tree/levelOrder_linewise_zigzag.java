@@ -7,7 +7,7 @@ public class Main {
     ArrayList<Node> children = new ArrayList<>();
   }
 
-  public static void display(Node node) {
+  public static void display(Node node) { 
     String str = node.data + " -> ";
     for (Node child : node.children) {
       str += child.data + ", ";
