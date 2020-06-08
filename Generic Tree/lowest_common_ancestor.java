@@ -13,7 +13,7 @@ public class Main {
       str += child.data + ", ";
     }
     str += ".";
-    System.out.println(str);
+    System.out.println(str); 
 
     for (Node child : node.children) {
       display(child);
