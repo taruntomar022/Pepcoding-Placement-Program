@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
   private static class Node {
-    int data;
+    int data; 
     ArrayList<Node> children = new ArrayList<>();
   }
 
