@@ -79,18 +79,19 @@ public class Main {
     return h;
   }
 
-  public static boolean areSimilar(Node n1, Node n2) {
+  public static boolean areMirror(Node n1, Node n2) {
     if(n1.children.size()!=n2.children.size()){
         return false;
-    }else{
-        boolean res = true;
-        for(int i=0,j=0;i<n1.children.size()&&j<n2.children.size();i++,j++){
-            Node temp1 = n1.children.get(i);
-            Node temp2 = n2.children.get(j);
-            res = areSimilar(temp1,temp2);
+    }
+    else{
+        for(int i=0,j=n2.children.size()-1;i<n1.children.size()&&j>=0;i++,j--){
+            Node nc1 = n1.children.get(i);
+            Node nc2 = n2.children.get(j);
+            if(areMirror(nc1,nc2)==false){
+                return false;
+            }
         }
-        return res;
-        
+        return true;
     }
   }
 
@@ -113,8 +114,8 @@ public class Main {
     }
     Node root2 = construct(arr2);
 
-    boolean similar = areSimilar(root1, root2);
-    System.out.println(similar);
+    boolean mirror = areMirror(root1, root2);
+    System.out.println(mirror);
   }
 
 }

@@ -79,42 +79,41 @@ public class Main {
     return h;
   }
 
-  public static boolean areSimilar(Node n1, Node n2) {
-    if(n1.children.size()!=n2.children.size()){
-        return false;
-    }else{
-        boolean res = true;
-        for(int i=0,j=0;i<n1.children.size()&&j<n2.children.size();i++,j++){
-            Node temp1 = n1.children.get(i);
-            Node temp2 = n2.children.get(j);
-            res = areSimilar(temp1,temp2);
+  public static boolean IsSymmetric(Node node) {
+    int lf = 0;
+    int rf = node.children.size()-1;
+    while(lf<rf){
+        Node left = node.children.get(lf);
+        Node right = node.children.get(rf);
+        if(left.children.size()==right.children.size()){
+            if(IsSymmetric(left)==false){
+                return false;
+            }
+            if(IsSymmetric(right)==false){
+                return false;
+            }
+        }else{
+            return false;
         }
-        return res;
-        
+        lf++;
+        rf--;
     }
+    return true;
   }
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-    int n1 = Integer.parseInt(br.readLine());
-    int[] arr1 = new int[n1];
-    String[] values1 = br.readLine().split(" ");
-    for (int i = 0; i < n1; i++) {
-      arr1[i] = Integer.parseInt(values1[i]);
+    int n = Integer.parseInt(br.readLine());
+    int[] arr = new int[n];
+    String[] values = br.readLine().split(" ");
+    for (int i = 0; i < n; i++) {
+      arr[i] = Integer.parseInt(values[i]);
     }
-    Node root1 = construct(arr1);
 
-    int n2 = Integer.parseInt(br.readLine());
-    int[] arr2 = new int[n2];
-    String[] values2 = br.readLine().split(" ");
-    for (int i = 0; i < n2; i++) {
-      arr2[i] = Integer.parseInt(values2[i]);
-    }
-    Node root2 = construct(arr2);
-
-    boolean similar = areSimilar(root1, root2);
-    System.out.println(similar);
+    Node root = construct(arr);
+    boolean sym = IsSymmetric(root);
+    System.out.println(sym);
+    // display(root);
   }
 
 }
