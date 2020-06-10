@@ -8,7 +8,7 @@ public class Main {
   }
 
   public static void display(Node node) {
-    String str = node.data + " -> ";
+    String str = node.data + " -> "; 
     for (Node child : node.children) {
       str += child.data + ", ";
     }
