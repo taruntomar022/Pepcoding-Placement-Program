@@ -48,7 +48,7 @@ public class Main {
 
         st.push(t);
       }
-    }
+    } 
 
     return root;
   }
