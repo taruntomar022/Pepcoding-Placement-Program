@@ -51,7 +51,7 @@ public class Main {
 //     ans.add(node);
 //     for(Node child: node.children){
 //         predecessorAndSuccessor(child,data);
-//     }
+//     } 
 //   }
     static int state;
     public static void predecessorAndSuccessor(Node node,int data){
