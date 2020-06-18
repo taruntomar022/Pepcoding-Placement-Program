@@ -18,7 +18,7 @@ public static class Node{
 }
 
 public static Node construct(int input[],int lo, int hi){
-    // base case
+    // base case 
     if(lo> hi){
         return null;
     }
