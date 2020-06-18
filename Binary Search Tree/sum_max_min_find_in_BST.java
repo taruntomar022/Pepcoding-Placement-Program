@@ -23,7 +23,7 @@ public class Main {
       this.state = state;
     }
   }
-
+ 
   public static Node construct(Integer[] arr) {
     Node root = new Node(arr[0], null, null);
     Pair rtp = new Pair(root, 1);
