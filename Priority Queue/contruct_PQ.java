@@ -12,7 +12,7 @@ public static void main(String[] args) {
     pq.add("khs");
     pq.add("hjsjgh");
     pq.add("klkgzhhg");
-    pq.add("nnsjhhgghhgjss");
+    pq.add("nnsjhhgghhgjss"); 
     pq.add("ahaggshjhjkkjjkjkkj");
     System.out.println("Size: "+pq.size());
     while(pq.size()>0){
