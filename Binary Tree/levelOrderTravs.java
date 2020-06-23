@@ -30,7 +30,7 @@ public class Main {
 
     Stack<Pair> st = new Stack<>();
     st.push(rtp);
-
+ 
     int idx = 0;
     while (st.size() > 0) {
       Pair top = st.peek();
