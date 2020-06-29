@@ -32,7 +32,7 @@ public class Main {
       
       ArrayList<ArrayList<Integer>> comps = new ArrayList<>();
       boolean visited[] = new boolean[graph.length];
-      for(int vrtx = 0;vrtx < graph.length;vrtx++){
+      for(int vrtx = 0;vrtx < graph.length;vrtx++){ 
           if(!visited[vrtx]){
             // mark viisted
             visited[vrtx] = true;
