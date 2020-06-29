@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main {
    static class Edge {
-      int src;
+      int src; 
       int nbr;
 
       Edge(int src, int nbr) {
