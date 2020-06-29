@@ -32,7 +32,7 @@ public class Main {
                     gccPostActive(arr,i,j,visited);
                     count++;
                 }
-            }
+            } 
        }
        return count;
    }
