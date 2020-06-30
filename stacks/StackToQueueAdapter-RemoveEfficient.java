@@ -30,7 +30,7 @@ public class Main {
       }
     }
 
-    int remove() {
+    int remove() { 
         if(mainS.size() == 0){
             System.out.println("Queue underflow");
             return -1;
