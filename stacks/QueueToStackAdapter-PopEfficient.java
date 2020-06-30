@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-
+ 
     public static class QueueToStackAdapter {
         Queue < Integer > mainQ;
         Queue < Integer > helperQ;
