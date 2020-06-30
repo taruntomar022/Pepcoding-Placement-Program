@@ -5,7 +5,7 @@ public class Main {
 
     public static class QueueToStackAdapter {
         Queue < Integer > mainQ;
-        Queue < Integer > helperQ;
+        Queue < Integer > helperQ; 
 
         public QueueToStackAdapter() {
             mainQ = new ArrayDeque < > ();
