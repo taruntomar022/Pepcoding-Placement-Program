@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
 
   public static class PriorityQueue {
-    ArrayList<Integer> data;
+    ArrayList<Integer> data; 
 
     public PriorityQueue() {
       data = new ArrayList<>();
