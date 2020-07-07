@@ -4,7 +4,7 @@ public class Main{
     public static class HashMap<K, V>{
         private class HMNode{
             K key;
-            V value;
+            V value; 
             HMNode(K key,V value){
                 this.key = key;
                 this.value = value;
