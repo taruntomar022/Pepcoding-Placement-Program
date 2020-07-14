@@ -33,7 +33,7 @@ public class Main {
 
     int idx = 0;
     while (st.size() > 0) {
-      Pair top = st.peek();
+      Pair top = st.peek(); 
       if (top.state == 1) {
         idx++;
         if (arr[idx] != null) {
